@@ -1,0 +1,73 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\usepackage{wallpaper}
+
+
+\usepackage{multirow}
+\usepackage{hyperref}
+%\CenterWallPaper{0.8}{./inphima_final_grau}
+\renewcommand*\arraystretch{1.5}
+\pagestyle{empty}
+
+\parindent 0pt
+
+
+\title{Ausgaben für die ESAG 2011}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{flushleft}
+\begin{Form}
+ 
+\begin{tabular}{lr}
+  Was soll gekauft werden? &   \TextField[name=1, width=0.65\textwidth,  bordercolor =0.5 0.5 0.5] { } \\ 
+  \small{}& \\
+  Voraussichtliche Kosten & \TextField[name=2,width=0.65\textwidth,  bordercolor =0.5 0.5 0.5] { }
+\end{tabular}
+
+\vspace{\baselineskip}
+ ~~Für welche Veranstaltung? \\ 
+\vspace{0.3\baselineskip}
+\center{\CheckBox[name=3, width=1em, height=1em, bordercolor=0 0 0]{Grillen~} \hspace{0.25\textwidth} \CheckBox[name=4, width=1em, height=1em, bordercolor=0 0 0]{Rallye~} \hspace{0.25\textwidth} \CheckBox[name=5, width=1em, height=1em, bordercolor=0 0 0]{Theater~}}
+
+\vspace{\baselineskip}
+
+\begin{tabular}{lr}
+  Wer kauft ein? & \TextField[name=6, width=0.65\textwidth,  bordercolor =0.5 0.5 0.5] { } \\ 
+  & \\
+   \multicolumn{2}{l}{Bemerkungen (genauere Ausführungen z.B.)}\\
+  \multicolumn{2}{r}{\TextField[name=7, width=0.95\textwidth,  bordercolor =0.5 0.5 0.5, multiline=true, height=6 em] { }} 
+\end{tabular}
+
+\vspace{\baselineskip}
+\begin{tabular}{cc}
+\multicolumn{2}{l}{Der bezeichnete Betrag wurde ausgehändigt.} \\
+  & \\
+  \underline{\hspace{0.45\textwidth}} & \underline{\hspace{0.45\textwidth}} \\
+  \small{Unterschrift, Datum} & \small{Unterschrift, Datum}
+\end{tabular}
+
+\vspace{2cm}
+
+\begin{tabular}{lr}
+  Tatsächliche Kosten~~ & \TextField[name=8, width=0.65\textwidth,  bordercolor =0.5 0.5 0.5] {~~~~~~ } \\ 
+\end{tabular}
+
+\vspace{\baselineskip}
+
+\begin{tabular}{cc}
+\multicolumn{2}{l}{\parbox{0.95\textwidth}{Die Differenz zwischen voraussichtlichen und tatsächlichen Kosten wurde beglichen und der Kassenzettel ausgehändigt.}} \\
+  & \\
+  \underline{\hspace{0.45\textwidth}} & \underline{\hspace{0.45\textwidth}} \\
+  \small{Unterschrift, Datum} & \small{Unterschrift, Datum}
+\end{tabular}
+\end{Form}
+  \end{flushleft}
+\end{document}
