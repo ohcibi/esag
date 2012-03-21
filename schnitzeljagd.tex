@@ -1,0 +1,161 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage[ngerman]{babel}
+\usepackage{wallpaper}
+\usepackage{multirow}
+
+\CenterWallPaper{0.8}{./inphima_final_grau}
+
+\pagestyle{empty}
+
+
+\geometry{a4paper, top=20mm, left=20mm, right=20mm, bottom=20mm}
+
+\newcounter{zeilen}
+\newcommand{\frage}[2]{
+ \setcounter{zeilen}{#2}
+ \textbf{#1} 
+ \whiledo{\value{zeilen}>0}{
+   \vspace{0.5cm} \\  
+   \underline{\hspace{0.9\textwidth}}
+   \addtocounter{zeilen}{-1}
+ }
+ \vspace{0.25cm}
+}
+
+\newcommand{\titel}[2]{
+\begin{center}
+{\Huge \textbf{#1}}\vspace{\baselineskip}\\
+{\LARGE #2}
+\vspace{\baselineskip}
+\end{center}
+}
+
+\begin{document}
+
+\titel{Schnitzeljagd Regeln}{}
+\large
+\begin{itemize}
+ \item Insgesamt gibt es drei Fragebögen. Sie sind nach Bereichen unterteilt. Bitte bearbeitet sie in der Reihenfolge, in der sie für eure Gruppe zusammen geheftet sind. Die Fragen auf den einzelnen Bögen sind nicht geordnet. Ihr solltet sie zu Beginn jedes Fragebogens komplett durchlesen.
+ \item In jeder Fachschaft gibt es ein Spiel, weshalb ihr euch vor Beginn jedes Fragebogens in einer der Fachschaften melden sollt - in welcher steht auf dem jeweiligen Bogen.
+ \item Das Spiel endet um 15 Uhr in 5H. Von dort aus bringen wir euch zu den fachspezifischen Tutorien. Die Siegerehrung findet im Anschluss daran beim Grillen statt.
+ \item Falls ihr nicht weiter wisst denkt daran, dass ihr einen Uniplan dabei habt.
+ \item Zur Not ruft in einer der Fachschaften an, wenn ihr euch gänzlich verlauft.
+\end{itemize}
+\begin{center}
+\begin{tabular}{|l|l|l|}
+ \hline
+ Wer? & Telefon & Raum \\
+\hline \hline
+ FS Informatik & 0211 81 14846 & 25.12.O1.18 \\ \hline
+ FS Physik & 0211 81 13232 & 25.32.00.21 \\ \hline
+ FS Mathe & 0211 81 13607 & 25.22.U1.25 \\ \hline
+\end{tabular}
+\end{center}
+\vspace{2cm}
+\begin{center}
+\Huge Informationen zu Gruppe \underline{\hspace{2cm}}:\\
+\end{center}
+\begin{tabular}{ll}
+ Name: \underline{\hspace{0.4\textwidth}} & Name: \underline{\hspace{0.4\textwidth}} \\
+ & \\
+ Name: \underline{\hspace{0.4\textwidth}} & Name: \underline{\hspace{0.4\textwidth}} \\
+ & \\
+ Name: \underline{\hspace{0.4\textwidth}} & Name: \underline{\hspace{0.4\textwidth}} \\
+\end{tabular}
+\vspace{2cm}
+\begin{center}
+ {\Huge Punkte in den Spielen}\\
+
+
+\begin{tabular}{ll}
+ & \\
+ Informatik: & \underline{\hspace{0.4\textwidth}} \\ & \\
+ Physik: & \underline{\hspace{0.4\textwidth}} \\ & \\
+ Mathematik: & \underline{\hspace{0.4\textwidth}} \\
+\end{tabular}
+
+\end{center}
+
+
+
+\pagebreak
+
+\titel{Fragebogen I}{ ZIM bis Botanischer Garten}
+Bitte zu Beginn dieses Fragebogens in der FS Physik melden.
+\begin{enumerate}
+ \item \frage{Wer oder was ist Mathilda?}{2}
+ \item \frage{Was hütet die Fachschaft Bio besonders?}{1}
+ \item \frage{Was steht auf dem Schild an der Tür des Terminalraumes in U1 des ZIM (25.41.U1.22)?}{2}
+ \item \frage{Welche Öffnungszeiten hat der Botanische Garten an einem Samstag im Juli?}{1}
+ \item \frage{Welchen Prozessor hat oder hatte Zeus?}{1}
+ \item \frage{Was ist die Raumnummer des Benutzerbüros im ZIM?}{1}
+ \item \frage{Welches ist der größte Hörsaal in Gebäude 26?}{1}
+ \item \frage{Wo sind die am höchsten liegenden Gewächshäuser der Uni?}{2}
+ \item \frage{Was ist gegenüber des ehemaligen Gebäudes 28?}{1}
+\end{enumerate}
+\pagebreak
+
+\titel{Fragebogen II}{Gebäude 25}
+Bitte zu Beginn dieses Fragebogens in der FS Mathe melden.
+\begin{enumerate}
+ \item \frage{Wie viele Personen dürfen in 25.12.A?}{1}
+ \item \frage{Wie viele Pinguine gibt es in der Fachschaft Informatik (ohne Kaiserpinguine)?}{1}
+ \item \frage{Was war früher im Raum der Fachschaft Mathe?}{1}
+ \item \frage{Macht ein Bild von Kawak.}{0}
+ \item \frage{Welchen Namen hat die Mensa Süd umgangssprachlich?}{1}
+ \item \frage{Wo hängt das Schwert in der Fachschaft Mathematik?}{1}
+ \item \frage{In welchem Gebäudeteil ist Hörsaal 5i?}{2}
+ \item \frage{Erkundigt euch in der Fachschaft Physik nach dem Rechenzentrum. Bleibt Hartnäckig. Was fällt euch auf?}{2}
+ \item \frage{Gebäudeteile von 25 haben Nummern zwischen 01 und 42. Wie verhalten sich diese Zahlen in Bezug auf die Himmelsrichtungen (Nord-Süd, bzw. Ost-West)?}{3}
+\end{enumerate}
+\pagebreak
+
+\titel{Fragebogen III}{Bibliothek bis Verwaltung}
+Bitte zu Beginn dieses Fragebogens in der FS Informatik melden.
+\begin{enumerate}
+  \item \frage{Welches Gericht ist heute auf dem linken großen Bildschirm in der Mensa unten links abgebildet?}{1}
+  \item \frage{Welches In$\Phi$Ma Fach fehlt auf dem Zettel im Studierenden Service Center und von wem stammt das Zitat zu eurer Gruppennummer modulo 10 (angeblich)?}{2}
+  \item \frage{Bringt einen Ausweis der Universitäts- und Landesbibliothek mit.}{0}
+  \item \frage{Wie viele Ballsportarten bietet der Hochschulsport an?}{1}
+  \item \frage{Was guckt Heinrich Heine an?}{2}
+  \item \frage{Was kostet eine Schokowaffel in einem Automaten in der Uni?}{1}
+  \item \frage{Wofür steht OASE?}{2}
+  \item \frage{Bringt eines der gelben Antragsblätter vom BAföG Amt mit.}{0}
+  \item \frage{Wie viele Fahnen stehen vor der Bibliothek?}{1}
+\end{enumerate}
+
+\pagebreak
+
+\titel{Schnitzeljagd der In$\Phi$Ma}{Studierenden Service Center}
+
+\includegraphics[width=0.95\textwidth]{purity.png}\\
+{\small xkcd.com/435}\\
+\vspace{1.5\baselineskip}
+\Large
+X enstpricht eurer Gruppennummer modulo 10.\\
+\vspace{\baselineskip}
+\begin{tabularx}{0.9\textwidth}{r| X}
+X & Zitat \\ \hline
+0 & Alles, was lediglich wahrscheinlich ist, ist wahrscheinlich falsch. \\
+1 & Beware of bugs in the above code; I have only proved it correct, not tried it. \\
+2 & Manche Menschen haben einen Gesichtskreis vom Radius Null und nennen ihn ihren Standpunkt. \\
+3 & Ich glaube, dass es auf der Welt einen Bedarf von vielleicht fünf Computern geben wird. \\
+4 & Menschen, die von der Algebra nichts wissen, können sich auch nicht die wunderbaren Dinge vorstellen, zu denen man mit Hilfe der genannten Wissenschaft gelangen kann. \\
+5 & Computer Science is no more about computers than astronomy is about telescopes. \\
+6 & Auch für den Physiker ist die Möglichkeit einer Beschreibung in der gewöhnlichen Sprache ein Kriterium für den Grad des Verständnisses, das in dem betreffenden Gebiet erreicht worden ist. \\
+7 & Zwei Dinge sind unendlich, das Universum und die menschliche Dummheit, aber bei dem Universum bin ich mir noch nicht ganz sicher.\\
+8 & Wer von der Quantentheorie nicht schockiert ist, hat sie nicht verstanden.\\
+9 & I may be a sorry case, but I don't write jokes in base 13.
+\end{tabularx}
+
+
+\pagebreak
+
+
+
+
+\end{document}
